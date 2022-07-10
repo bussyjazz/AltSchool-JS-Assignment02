@@ -37,13 +37,13 @@ assignment.sumOfNumbers = sumOfNumbers;
  */
 
 function countEvenNumbers(arrayOfNumbers) {
- let evenNumbers=[];
-    for arrayOfNumbers.forEach(number=>{
-     if(number%2==0){
-     evenNumbers.push(number);
-     }
-    });
-      return evenNumbers.length;
+ let count =0;
+    for (let i=0; i< arrayOfNumbers.length; i++){
+        if(arrayOfNumbers[i] % 2==0){
+            count++
+        }
+    }
+      return count;   
 }
 console.log(countEvenNumbers(arrayOfNumbers));
  assignment.countEvenNumbers = countEvenNumbers;
